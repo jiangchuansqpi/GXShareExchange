@@ -1,0 +1,255 @@
+.map-search-box
+  .search-control-box
+    position: relative
+    display: inline-block
+
+    .search-control
+      .el-input__inner
+        background: linear-gradient(180deg, #0F707C 0%, #0E2B45 100%)
+        border-radius: 15px
+        border: 1px solid
+        padding-right: 50px
+        padding-left: 20px
+        width: 370px
+        height: 30px
+        font-size: 14px
+        font-weight: 400
+        color: #00F1C4
+
+        &::placeholder
+          color: #00f1c4
+
+
+.map-search-result
+  width: 370px
+  padding: 0 !important
+  border: none !important
+  background: transparent !important
+
+  .popper__arrow
+    display: none !important
+
+  .ant-popover-content
+
+    .ant-popover-inner
+      .ant-popover-inner-content
+        padding: 0
+
+
+  .search-result-list
+    // position: absolute
+    // padding: 12px 36px 12px 14px
+    width: 100%
+    overflow: auto
+    min-height: 30px
+    max-height: 500px
+    box-sizing: border-box
+    background: linear-gradient(180deg, #0C4249 0%, #0E2B45 100%)
+    box-shadow: 0px 6px 24px 7px #092639
+    border-radius: 8px
+    // opacity: 0.6
+    border: 1px solid #00F1C4
+
+    .list-item
+      background: rgba(16, 39, 63, 0.6)
+      // height: 56px
+      padding: 10px 16px
+      margin: 10px 0
+      // display: flex
+
+      .el-row
+        height: 100%
+
+      .address-name
+        cursor: pointer
+        background-repeat: no-repeat
+        background-size: 40px
+        height: 100%
+        padding-right: 10px
+        text-decoration: none
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        box-sizing: border-box
+        font-weight: 400
+        color: #13DAFF
+        font-size: 14px
+        // line-height: 80px
+        .icon-box
+          position: relative
+          background-size: 100% 70%
+          background-repeat: no-repeat
+          background-position: center
+          display: inline-block
+          // width: 60px
+          height: 100%
+          margin-right: 25px
+          width: 46px
+
+          .index-box
+            position: absolute
+            right: 0
+            font-weight: 500
+            color: #FFFFFF
+            width: 100%
+            text-align: center
+
+        .address-box
+          display: block
+
+          .house-people
+            margin-bottom: 5px
+
+            span
+              flex: 1
+              display: inline-block
+              width: 50%
+
+
+      .address-detail
+        // margin-left: 10px
+        // margin-right: 5px
+        text-align: right
+        color: #999
+        font-size: 12px
+        box-sizing: border-box
+
+
+    // .list-item:hover
+    //    background: rgba(87, 169, 246, 0.16)
+    //    border-radius: 20px
+
+    .no-data
+      height: 32px
+      line-height: 32px
+      padding: 0 16px
+      font-weight: 400
+      color: #13DAFF
+
+  .search-result-list
+    overflow: auto
+
+  .search-result-list::-webkit-scrollbar
+    width: 4px
+    height: 4px
+
+  /*滚动条滑块*/
+
+  .search-result-list::-webkit-scrollbar-thumb
+    border-radius: 3px
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2)
+    // background: rgb(0, 0, 0, 0.7)
+    background-color: #05E3D0
+
+  /*滚动条里面轨道*/
+
+  .search-result-list::-webkit-scrollbar-track
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset
+
+  /*滚动条的小边角*/
+
+  .search-result-list::-webkit-scrollbar-corner
+    background: transparent
+
+.select-control-box
+  width: 140px
+  height: 30px
+  background: linear-gradient(180deg, #0F707C 0%, #0E2B45 100%)
+  border-radius: 15px
+  border: 1px solid
+  color: #00F1C4
+  margin-right: 20px
+
+  .el-input
+    height: 100%
+    background: inherit
+    border-radius: 15px
+
+    .el-input__inner
+      height: 100%
+      background: inherit
+      border-radius: 15px
+      border: none
+      color: #00f1c4
+      font-size: 14px
+      font-weight: 400
+
+      &::placeholder
+        color: #00f1c4
+        font-size: 14px
+        font-weight: 400
+
+    .el-input__suffix
+      .el-input__suffix-inner
+        .el-input__icon
+          line-height: 30px
+          color: #00f1c4
+
+
+#map
+  .aimap-ctrl-bottom-left
+    .aimap-ctrl
+      display: none !important
+
+
+.aimap-popup-anchor-top
+  .aimap-popup-tip
+    width: 20px
+    height: 10px
+    border: none
+    background-image: url('~@/assets/img/popup@2x.png')
+    background-size: 100% 100%
+    transform: rotate(180deg)
+    margin-bottom: -1px
+
+
+
+.aimap-popup-anchor-bottom
+  .aimap-popup-tip
+    width: 20px
+    height: 10px
+    border: none
+    background-image: url('~@/assets/img/popup@2x.png')
+    transform: rotate(360deg)
+    background-size: 100% 100%
+    margin-top: -1px
+    display: none
+
+
+.aimap-popup
+  .aimap-popup-content
+    // width: 384px
+    // height: 206px
+    width: 100%
+    // background: rgba(5, 15, 61, 0.9)
+    // border: 1px solid #00FF7C
+    background: none
+    box-sizing: border-box
+    padding: 0
+    // padding: 22px 29px
+    .content
+      font-size: 12px
+      font-weight: 400
+      color: #00FF7C
+      line-height: 26px
+      //margin-bottom: 17px
+
+    .aimap-popup-close-button
+      color: #fff
+      font-size: 25px
+
+.aimap-control-container
+  .aimap-ctrl-top-right
+    top: 80px
+    display: inline-block
+    right: auto
+    left: 25%
+    .aimap-draw_line
+      background-image: url('~@/assets/img/draw.png')
+    .aimap-draw_trash
+      border-radius: 0
+      background-image: url('~@/assets/img/delete.png')
+    .aimap-draw_combine,
+    .aimap-draw_uncombine
+      display: none
+
